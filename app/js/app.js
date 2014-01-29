@@ -6,7 +6,7 @@ $(function() {
             "name": "Roguelike",
             "url": "http://whostolemyhat.github.io/roguelike/",
             "desc": "<p>A simple roguelike game made for Dec's <a href=\"http://www.onegameamonth.com/\" target=\"_blank\">One Game a Month</a>.</p>",
-            "img": "",
+            
             "tags": ["game", "javascript", "phaser"],
             "date": "2013-12-30",
             "published": true
@@ -33,7 +33,7 @@ $(function() {
             "name": "Tilemap generator",
             "url": "http://whostolemyhat.github.io/level-generator",
             "desc": "<p>An implementation of <a href=\"http://gamedevelopment.tutsplus.com/tutorials/cave-levels-cellular-automata--gamedev-9664/\" target=\"_blank\">Gamedevtut's cave generator</a> I'm using in a game. Creates a random tilemap and exports as JSON.</p>",
-            "img": "",
+            
             "tags": ["javascript"],
             "date": "2013-08-04",
             "published": true
@@ -87,7 +87,7 @@ $(function() {
             "name": "Random Team Generator",
             "url": "/projects/team-generator",
             "desc": "<p>A simple web app which generates random teams from user-submitted names. Built using the Flask framework.</p>",
-            "img": "",
+            
             "tags": ["python", "flask"],
             "date": "2013-01-08",
             "published": true
@@ -96,7 +96,7 @@ $(function() {
             "name": "Bookmark application",
             "url": "https://github.com/whostolemyhat/bookmarks",
             "desc": "<p>A (work-in-progress) bookmark site which I wrote to learn about Flask (a very small Python web framework).</p>",
-            "img": "",
+            
             "tags": ["python", "flask"],
             "date": "2012-09-04",
             "published": true
@@ -118,7 +118,7 @@ $(function() {
                     "only by logged-in users - you can " +
                     "<a href=\"http://jt-udacity.appspot.com/signup\" title=\"Sign up for an account\" target=\"_blank\">sign up here</a>." +
                 "</p>",
-            "img": "",
+            
             "tags": ["python"],
             "date": "2012-04-30",
             "published": true

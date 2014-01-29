@@ -7,7 +7,6 @@ app.Project = Backbone.Model.extend({
         desc: '',
         img: 'img/placeholder.png',
         tags: 'None',
-        date: '2014-01-24',
-        published: true
+        date: '2014-01-24'
     }
 });

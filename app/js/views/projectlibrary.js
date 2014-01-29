@@ -31,7 +31,7 @@ app.ProjectLibraryView = Backbone.View.extend({
         e.preventDefault();
 
         var formData = {};
-        $('#addProject').children('input').each(function(i, el) {
+        $('#addProject').children('input, textarea').each(function(i, el) {
             if($(el).val() !== '') {
                 formData[el.id] = $(el).val();
             }

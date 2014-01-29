@@ -10,7 +10,6 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
-        <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/lib/modernizr-2.6.2.min.js"></script>
@@ -19,58 +18,49 @@
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
+        <main id="main" class="grid">
+            <div id="projects">
+                sort by: 
+<!--                 <form action="#" id="addProject">
+                    <h2>Add New</h2>
+                    <label for="img">Img:</label>
+                    <input type="file" name="img" id="img">
 
-        <div id="projects">
-            <form action="#" id="addProject">
-                <label for="img">Img:</label>
-                <input type="file" name="img" id="img">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
 
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name">
+                    <label for="desc">Description</label>
+                    <textarea name="desc" id="desc" cols="30" rows="10"></textarea>
 
-                <label for="desc">Description</label>
-                <textarea name="desc" id="desc" cols="30" rows="10"></textarea>
-
-                <label for="url">URL</label>
-                <input type="url" name="url" id="url">
+                    <label for="url">URL</label>
+                    <input type="url" name="url" id="url">
+                        
+                    <label for="tags">Tags</label>
+                    <input type="text" name="tags" id="tags">
                     
-                <label for="tags">Tags</label>
-                <input type="text" name="tags" id="tags">
-                
-                <label for="date">Date</label>
-                <input type="date" name="date" id="date">
+                    <label for="date">Date</label>
+                    <input type="date" name="date" id="date">
 
-                <label for="published">Published?</label>
-                <input type="checkbox" name="published" id="published">
+                    <button id="add">Add</button>
+                </form>
+ -->
 
-                <button id="add">Add</button>
-            </form>
-
-            <div class="projectContainer">
-                <img src="img/placeholder.png" alt="">
-                <ul>
-                    <li>Name</li>
-                    <li>Description</li>
-                    <li>http://example.com</li>
-                    <li>test, javascript</li>
-                    <li>2014-01-24</li>
-                </ul>
-
-                <button class="delete">Delete</button>
             </div>
-        </div>
+        </main>
+
+        
 
         <script id="projectTemplate" type="text/template">
-            <img src="<% img %>" />
+            <a href="<%= url %>" target="_blank" title="<%= name %>" class="projectImage" style="background-image:url('<%= img %>');">
+                <h2 class="projectName"><%= name %></h2>
+            </a>
+            <%= desc %>
+            <a href="<%= url %>" target="_blank" title="<%= name %>">View</a>
             <ul>
-                <li><%= name %></li>
-                <li><%= desc %></li>
-                <li><%= url %></li>
                 <li><%= tags %></li>
-                <li><%= date %></li>
             </ul>
 
-            <button class="delete">Delete</button>
+            <!--<button class="delete">Delete</button>-->
         </script>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
