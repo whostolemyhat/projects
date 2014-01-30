@@ -57,7 +57,7 @@
             <%= desc %>
             <a href="<%= url %>" target="_blank" title="<%= name %>">View</a>
             <ul>
-                <li><%= tags %></li>
+                <% _.each(tags, function(tag) { %><li><%= tag %></li><% }); %>
             </ul>
 
             <!--<button class="delete">Delete</button>-->

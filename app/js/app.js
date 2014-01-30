@@ -1,7 +1,7 @@
 var app = app || {};
 
 $(function() {
-    var projects = [
+    app.projects = [
         {
             "name": "Roguelike",
             "url": "http://whostolemyhat.github.io/roguelike/",
@@ -143,5 +143,5 @@ $(function() {
         }
     ];
 
-    new app.ProjectLibraryView(projects);
+    new app.ProjectLibraryView(app.projects);
 });
